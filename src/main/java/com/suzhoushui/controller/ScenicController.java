@@ -4,6 +4,8 @@ package com.suzhoushui.controller;
 import com.suzhoushui.domain.Comment;
 import com.suzhoushui.domain.Scenic;
 import com.suzhoushui.mapper.ScenicMapper;
+import com.suzhoushui.response.BaseResponse;
+import com.suzhoushui.service.impl.ScenicService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,21 +22,23 @@ public class ScenicController {
     @Autowired
     private ScenicMapper scenicMapper;
 
+    @Autowired
+    private ScenicService scenicService;
+
+
     @GetMapping("/findByIdScenic")
-    public Scenic findById(Long id){
-        return scenicMapper.findById(id);
+    public BaseResponse findById(Long id){
+        return scenicService.getOneScenic(id);
     }
 
     @GetMapping("/pagingScenic")
-    public List<Scenic> pagingScenic(int page){
-        int num=page-1;
-        int startPage=num*5;
-        return scenicMapper.paging(startPage,5);
+    public Object pagingScenic(int page){
+        return scenicService.pagingScenic(page);
 
     }
 
     @GetMapping("/getComment")
-    public List<Comment> getComment(Long scenic_id){
+    public Object getComment(Long scenic_id){
         return scenicMapper.getComment(scenic_id);
     }
 }

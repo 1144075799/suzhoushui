@@ -1,6 +1,7 @@
 package com.suzhoushui.controller;
 
 import com.suzhoushui.mapper.SpecialtyMapper;
+import com.suzhoushui.service.impl.SpecialtyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -15,12 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpecialtyController {
 
     @Autowired
-    private SpecialtyMapper specialtyMapper;
+    private SpecialtyService specialtyService;
 
     @GetMapping("/getAllSpecialty")
     @ApiOperation(value = "返回所有特色的接口",notes = "Get请求")
     public Object getAll(){
-        return specialtyMapper.getAllSpecialty();
+        return specialtyService.getAll();
     }
 
 }

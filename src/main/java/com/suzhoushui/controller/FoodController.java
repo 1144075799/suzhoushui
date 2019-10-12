@@ -1,8 +1,8 @@
 package com.suzhoushui.controller;
 
-import com.suzhoushui.domain.Food;
-import com.suzhoushui.domain.FoodAddress;
-import com.suzhoushui.mapper.FoodMapper;
+
+import com.suzhoushui.response.BaseResponse;
+import com.suzhoushui.service.impl.FoodService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,33 +16,34 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class FoodController {
 
+
     @Autowired
-    private FoodMapper foodMapper;
+    private FoodService foodService;
 
 
 
     @GetMapping("/getAllFood")
     @ApiOperation(value = "返回所有美食的接口",notes = "Get请求")
     public Object getAll(){
-        return foodMapper.getAllFood();
+        return foodService.getAll();
     }
 
     @GetMapping("getOneFood")
     @ApiOperation(value = "返回一个美食的接口",notes = "get请求参数中带上id")
-    public Food getOne(Long id){
-        return foodMapper.findById(id);
+    public BaseResponse getOne(Long id){
+        return foodService.getOne(id);
     }
 
 
     @GetMapping("findFoodAddress")
     @ApiOperation(value = "返回美食的地址接口",notes = "get请求参数中带上美食的id")
     public Object getAddress(Long food_id){
-        return foodMapper.findFoodAddress(food_id);
+        return foodService.getAddress(food_id);
     }
 
     @GetMapping("findOneAddress")
     @ApiOperation(value = "返回一个美食地址的接口",notes = "get请求参数中带上美食地址的id")
-    public FoodAddress getOneAddress(Long id){
-        return foodMapper.findOneAddress(id);
+    public BaseResponse getOneAddress(Long id){
+        return foodService.getOneAddress(id);
     }
 }
