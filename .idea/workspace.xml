@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5761d1da-0f9c-4817-a853-463c80aa3070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/FoodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/ScenicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/SpecialtyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/FoodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/ScenicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/SpecialtyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/util/Base64Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/LikeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/Like.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/LikeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/LikeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/LikeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/ScenicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/ScenicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/SpecialtyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/SpecialtyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/FoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/FoodController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/ScenicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/ScenicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/SpecialtyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/SpecialtyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/enums/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/enums/StatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/enums/StatusCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/enums/StatusCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/UserService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,12 +123,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@81a543f5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8285546c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@81a543f5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8aa72363" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8285546c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@29d9698f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -157,7 +154,10 @@
       <workItem from="1570598772022" duration="815000" />
       <workItem from="1570674199517" duration="611000" />
       <workItem from="1570680359436" duration="2484000" />
-      <workItem from="1570858199931" duration="4746000" />
+      <workItem from="1570858199931" duration="7733000" />
+      <workItem from="1570869660586" duration="1885000" />
+      <workItem from="1570928990479" duration="408000" />
+      <workItem from="1570929420874" duration="4640000" />
     </task>
     <servers />
   </component>
