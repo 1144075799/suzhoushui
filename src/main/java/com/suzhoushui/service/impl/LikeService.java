@@ -33,7 +33,7 @@ public class LikeService implements com.suzhoushui.service.LikeService {
 
         User user= userTokenUtil.getUser(token);
 
-        String user_name=user.getUsername();
+        Integer user_id=user.getId();
 
         BaseResponse baseResponse=null;
 
@@ -44,7 +44,7 @@ public class LikeService implements com.suzhoushui.service.LikeService {
         String image=food.getImage();
 
 
-        Integer type =likeMapper.addLikeFood(type_id,name,image,user_name);
+        Integer type =likeMapper.addLikeFood(type_id,name,image,user_id);
 
         if (type==1){
             baseResponse = new BaseResponse(StatusCode.LikeSuccess);
@@ -61,7 +61,7 @@ public class LikeService implements com.suzhoushui.service.LikeService {
 
         User user= userTokenUtil.getUser(token);
 
-        String user_name=user.getUsername();
+        Integer user_id=user.getId();
 
 
         BaseResponse baseResponse=null;
@@ -72,7 +72,7 @@ public class LikeService implements com.suzhoushui.service.LikeService {
 
         String image = scenic.getImage();
 
-        Integer type = likeMapper.addLikeScenic(type_id,name,image,user_name);
+        Integer type = likeMapper.addLikeScenic(type_id,name,image,user_id);
 
         if (type==1){
             baseResponse = new BaseResponse(StatusCode.LikeSuccess);

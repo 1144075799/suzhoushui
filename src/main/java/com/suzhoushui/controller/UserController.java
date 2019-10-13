@@ -39,7 +39,12 @@ public class UserController {
 
     @GetMapping("/test")
     public BaseResponse test(String username){
-        BaseResponse baseResponse=userService.test(username);
+        BaseResponse baseResponse = new BaseResponse(StatusCode.LikeSuccess);
+
+        User user=userService.test(username);
+
+        System.out.println(user.getId());
+
         return baseResponse;
     }
 

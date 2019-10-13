@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5761d1da-0f9c-4817-a853-463c80aa3070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/LikeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/Like.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/LikeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/LikeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/LikeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/enums/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/enums/StatusCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/LikeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/LikeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/LikeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/enums/StatusCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/enums/StatusCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/LikeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/LikeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/UserService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,12 +121,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8285546c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d822345" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8285546c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@29d9698f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d822345" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a5db3ab9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -158,6 +156,7 @@
       <workItem from="1570869660586" duration="1885000" />
       <workItem from="1570928990479" duration="408000" />
       <workItem from="1570929420874" duration="4640000" />
+      <workItem from="1570937861130" duration="1601000" />
     </task>
     <servers />
   </component>

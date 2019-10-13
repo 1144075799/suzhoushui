@@ -111,16 +111,14 @@ public class UserService implements com.suzhoushui.service.UserService {
     }
 
     @Override
-    public BaseResponse test(String username) {
+    public User test(String username) {
 
-        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+
         User user=userMapper.selectByUserName(username);
 
-        Map map=new HashMap();
+        System.out.println(user.getId());
 
-        map.put("user",user);
-        baseResponse.setData(map);
 
-        return baseResponse;
+        return user;
     }
 }

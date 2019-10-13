@@ -1,5 +1,6 @@
 package com.suzhoushui.service;
 
+import com.suzhoushui.domain.User;
 import com.suzhoushui.response.BaseResponse;
 
 public interface UserService {
@@ -30,6 +31,6 @@ public interface UserService {
     public BaseResponse findByName(String username,String token);
 
 
-    public BaseResponse test(String username);
+    public User test(String username);
 
 }

@@ -2,7 +2,7 @@ package com.suzhoushui.domain;
 
 public class User implements Role {
 
-    private int id;
+    private Integer id;
 
     private String username;
 
@@ -18,7 +18,7 @@ public class User implements Role {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -32,11 +32,6 @@ public class User implements Role {
 
     public String getPassword() {
         return password;
-    }
-
-    @Override
-    public void setId(Integer id) {
-
     }
 
     public void setPassword(String password) {
