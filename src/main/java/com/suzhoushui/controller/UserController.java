@@ -36,18 +36,6 @@ public class UserController {
         return baseResponse;
     }
 
-
-    @GetMapping("/test")
-    public BaseResponse test(String username){
-        BaseResponse baseResponse = new BaseResponse(StatusCode.LikeSuccess);
-
-        User user=userService.test(username);
-
-        System.out.println(user.getId());
-
-        return baseResponse;
-    }
-
     @PostMapping("/login")
     public BaseResponse login(String username, String password){
         BaseResponse baseResponse=userService.login(username,password);

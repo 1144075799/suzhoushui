@@ -13,7 +13,7 @@ public interface LikeService {
      * @param token
      * @return
      */
-    public BaseResponse addLikeFood(Long type_id, String token);
+    public Integer addLikeFood(Long type_id, String token);
 
     /**
      * 添加用户喜欢的美景
@@ -21,6 +21,6 @@ public interface LikeService {
      * @param token
      * @return
      */
-    public BaseResponse addLikeScenic(Long type_id,String token);
+    public Integer addLikeScenic(Long type_id,String token);
 
 }

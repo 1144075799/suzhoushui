@@ -1,5 +1,6 @@
 package com.suzhoushui.service;
 
+import com.suzhoushui.domain.Comment;
 import com.suzhoushui.domain.Scenic;
 import com.suzhoushui.response.BaseResponse;
 
@@ -12,7 +13,7 @@ public interface ScenicService {
      * @param page
      * @return
      */
-    public Object pagingScenic(int page);
+    public List<Scenic>  pagingScenic(int page);
 
 
     /**
@@ -20,13 +21,13 @@ public interface ScenicService {
      * @param id
      * @return
      */
-    public BaseResponse getOneScenic(Long id);
+    public Scenic getOneScenic(Long id);
 
     /**
      * 根据景区id查询评论
      * @param scenic_id
      * @return
      */
-    public Object getComment(Long scenic_id);
+    public List<Comment> getComment(Long scenic_id);
 
 }

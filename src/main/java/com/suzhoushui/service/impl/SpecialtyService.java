@@ -16,10 +16,8 @@ public class SpecialtyService implements com.suzhoushui.service.SpecialtyService
     private SpecialtyMapper specialtyMapper;
 
     @Override
-    public Object getAll() {
-        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+    public List<Specialty> getAll() {
         List<Specialty> foodList=specialtyMapper.getAllSpecialty();
-        baseResponse.setData(foodList);
-        return baseResponse;
+        return foodList;
     }
 }

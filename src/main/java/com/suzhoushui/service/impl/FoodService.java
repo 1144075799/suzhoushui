@@ -19,38 +19,32 @@ public class FoodService implements com.suzhoushui.service.FoodService {
     private FoodMapper foodMapper;
 
     @Override
-    public Object getAll() {
+    public List<Food> getAll() {
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         List<Food> foodList=foodMapper.getAllFood();
-        baseResponse.setData(foodList);
-        return baseResponse;
+        return foodList;
     }
 
     @Override
-    public BaseResponse getOne(Long id) {
-        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+    public Food getOne(Long id) {
+
         Food food=foodMapper.findById(id);
-        Map map = new HashMap();
-        map.put("food",food);
-        baseResponse.setData(map);
-        return baseResponse;
+
+        return food;
     }
 
     @Override
-    public Object getAddress(Long food_id) {
-        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+    public List<FoodAddress> getAddress(Long food_id) {
+
         List<FoodAddress> foodList=foodMapper.findFoodAddress(food_id);
-        baseResponse.setData(foodList);
-        return baseResponse;
+
+        return foodList;
     }
 
     @Override
-    public BaseResponse getOneAddress(Long id) {
-        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+    public FoodAddress getOneAddress(Long id) {
         FoodAddress foodAddress=foodMapper.findOneAddress(id);
-        Map map = new HashMap();
-        map.put("foodAddress",foodAddress);
-        baseResponse.setData(map);
-        return baseResponse;
+
+        return foodAddress;
     }
 }

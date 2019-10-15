@@ -29,13 +29,13 @@ public class LikeService implements com.suzhoushui.service.LikeService {
     private UserTokenUtilImpl userTokenUtil;
 
     @Override
-    public BaseResponse addLikeFood(Long type_id, String token) {
+    public Integer addLikeFood(Long type_id, String token) {
 
         User user= userTokenUtil.getUser(token);
 
         Integer user_id=user.getId();
 
-        BaseResponse baseResponse=null;
+
 
         Food food= foodMapper.findById(type_id);
 
@@ -46,25 +46,20 @@ public class LikeService implements com.suzhoushui.service.LikeService {
 
         Integer type =likeMapper.addLikeFood(type_id,name,image,user_id);
 
-        if (type==1){
-            baseResponse = new BaseResponse(StatusCode.LikeSuccess);
-            return baseResponse;
-        }
 
-        baseResponse = new BaseResponse(StatusCode.LikeFail);
 
-        return baseResponse;
+        return type;
     }
 
     @Override
-    public BaseResponse addLikeScenic(Long type_id, String token) {
+    public Integer addLikeScenic(Long type_id, String token) {
 
+        //根据token获取用户信息
         User user= userTokenUtil.getUser(token);
 
+        //获取用户的id
         Integer user_id=user.getId();
 
-
-        BaseResponse baseResponse=null;
 
         Scenic scenic = scenicMapper.findById(type_id);
 
@@ -74,13 +69,8 @@ public class LikeService implements com.suzhoushui.service.LikeService {
 
         Integer type = likeMapper.addLikeScenic(type_id,name,image,user_id);
 
-        if (type==1){
-            baseResponse = new BaseResponse(StatusCode.LikeSuccess);
-            return baseResponse;
-        }
 
-        baseResponse = new BaseResponse(StatusCode.LikeFail);
 
-        return baseResponse;
+        return type;
     }
 }

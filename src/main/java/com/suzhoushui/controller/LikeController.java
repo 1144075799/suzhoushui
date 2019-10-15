@@ -1,5 +1,6 @@
 package com.suzhoushui.controller;
 
+import com.suzhoushui.enums.StatusCode;
 import com.suzhoushui.response.BaseResponse;
 import com.suzhoushui.service.impl.LikeService;
 import io.swagger.annotations.Api;
@@ -21,14 +22,37 @@ public class LikeController {
     @GetMapping("/likeFood")
     @ApiOperation(value = "添加喜欢美食接口",notes = "get请求参数中带上美食的id，和用户的token")
     public BaseResponse likeFood(Long type_id,String token){
-        return likeService.addLikeFood(type_id,token);
+
+        BaseResponse baseResponse=null;
+
+        Integer type=likeService.addLikeFood(type_id,token);
+
+        if (type==1){                                                   //对返回参数进行判断
+            baseResponse = new BaseResponse(StatusCode.LikeSuccess);
+            return baseResponse;
+        }
+
+        baseResponse = new BaseResponse(StatusCode.LikeFail);
+
+        return baseResponse;
     }
 
 
     @GetMapping("/likeScenic")
     @ApiOperation(value = "添加喜欢美景接口",notes = "get请求参数中带上美食的id，和用户的token")
     public BaseResponse likeScenic(Long type_id,String token){
-        return likeService.addLikeScenic(type_id,token);
+        BaseResponse baseResponse=null;
+
+        Integer type =  likeService.addLikeScenic(type_id,token);
+
+        if (type==1){
+            baseResponse = new BaseResponse(StatusCode.LikeSuccess);
+            return baseResponse;
+        }
+
+        baseResponse = new BaseResponse(StatusCode.LikeFail);
+
+        return baseResponse;
     }
 
 }

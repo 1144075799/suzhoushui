@@ -31,6 +31,6 @@ public interface UserService {
     public BaseResponse findByName(String username,String token);
 
 
-    public User test(String username);
+
 
 }

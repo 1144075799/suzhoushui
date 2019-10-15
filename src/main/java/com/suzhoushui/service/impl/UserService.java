@@ -92,17 +92,17 @@ public class UserService implements com.suzhoushui.service.UserService {
 
     @Override
     public BaseResponse findByName(String username, String token) {
-//        User user = userTokenUtil.getUser(token);
+        User user = userTokenUtil.getUser(token);
 
 //        System.out.println(user.getUsername());
 
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         Map map = new HashMap();
-        Integer id = userMapper.selectByUserName("admin").getId();
+        String name=user.getUsername();
 
-        User user1 = userMapper.selectByUserName("admin");
+        User user1 = userMapper.selectByUserName(name);
 
-        System.out.println("用户id是"+id);
+
 
         map.put("token",token);
         map.put("user",user1);
@@ -110,15 +110,5 @@ public class UserService implements com.suzhoushui.service.UserService {
         return baseResponse;
     }
 
-    @Override
-    public User test(String username) {
 
-
-        User user=userMapper.selectByUserName(username);
-
-        System.out.println(user.getId());
-
-
-        return user;
-    }
 }

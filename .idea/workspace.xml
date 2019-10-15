@@ -3,19 +3,39 @@
   <component name="ChangeListManager">
     <list default="true" id="5761d1da-0f9c-4817-a853-463c80aa3070" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/LikeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/ScenicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/ScenicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/SpecialtyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/SpecialtyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/LikeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/LikeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/LikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/ScenicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/ScenicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/SpecialtyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/FoodService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/LikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/ScenicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/ScenicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/SpecialtyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/demo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/FoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/FoodController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/LikeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/LikeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/ScenicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/ScenicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/SpecialtyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/SpecialtyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/interceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/interceptor/TokenInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/FoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/FoodService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/ScenicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/ScenicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/SpecialtyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/SpecialtyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/FoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/FoodService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/LikeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/LikeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/ScenicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/ScenicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/SpecialtyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/SpecialtyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/Base64Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/Base64Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/MD5Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/UserTokenUtilImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/UserTokenUtilImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,12 +141,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d822345" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5bea373" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d822345" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a5db3ab9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5bea373" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d90999ab" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -157,6 +177,9 @@
       <workItem from="1570928990479" duration="408000" />
       <workItem from="1570929420874" duration="4640000" />
       <workItem from="1570937861130" duration="1601000" />
+      <workItem from="1570958965810" duration="1295000" />
+      <workItem from="1571118661434" duration="52000" />
+      <workItem from="1571124925220" duration="3155000" />
     </task>
     <servers />
   </component>

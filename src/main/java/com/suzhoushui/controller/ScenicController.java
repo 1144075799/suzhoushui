@@ -3,6 +3,7 @@ package com.suzhoushui.controller;
 
 import com.suzhoushui.domain.Comment;
 import com.suzhoushui.domain.Scenic;
+import com.suzhoushui.enums.StatusCode;
 import com.suzhoushui.mapper.ScenicMapper;
 import com.suzhoushui.response.BaseResponse;
 import com.suzhoushui.service.impl.ScenicService;
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Api(value = "景点模板")
 @RestController
@@ -28,17 +31,28 @@ public class ScenicController {
 
     @GetMapping("/findByIdScenic")
     public BaseResponse findById(Long id){
-        return scenicService.getOneScenic(id);
+        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+        Scenic scenic=scenicMapper.findById(id);
+        Map map = new HashMap();
+        map.put("scenic",scenic);
+        baseResponse.setData(map);
+        return baseResponse;
     }
 
     @GetMapping("/pagingScenic")
     public Object pagingScenic(int page){
-        return scenicService.pagingScenic(page);
+        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+        List<Scenic> scenicList=scenicService.pagingScenic(page);
+        baseResponse.setData(scenicList);
+        return baseResponse;
 
     }
 
     @GetMapping("/getComment")
     public Object getComment(Long scenic_id){
-        return scenicMapper.getComment(scenic_id);
+        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+        List<Comment> commentList=scenicMapper.getComment(scenic_id);
+        baseResponse.setData(commentList);
+        return baseResponse;
     }
 }
