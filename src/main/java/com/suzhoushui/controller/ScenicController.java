@@ -10,6 +10,7 @@ import com.suzhoushui.service.impl.ScenicService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -53,6 +54,19 @@ public class ScenicController {
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         List<Comment> commentList=scenicMapper.getComment(scenic_id);
         baseResponse.setData(commentList);
+        return baseResponse;
+    }
+
+    @PostMapping("/addComment")
+    public Object addComment(Long scenic_id,String comment,String token){
+        Integer type=scenicService.addComment(scenic_id,comment,token);
+
+        if(type==1){
+            BaseResponse baseResponse = new BaseResponse(StatusCode.CommentSuccess);
+            return baseResponse;
+        }
+
+        BaseResponse baseResponse = new BaseResponse(StatusCode.CommentFail);
         return baseResponse;
     }
 }

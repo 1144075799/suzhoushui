@@ -30,4 +30,13 @@ public interface ScenicService {
      */
     public List<Comment> getComment(Long scenic_id);
 
+
+    /**
+     * 添加评论
+     * @param scenic_id
+     * @param token
+     * @return
+     */
+    public Integer addComment(Long scenic_id,String comment,String token);
+
 }
