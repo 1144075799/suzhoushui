@@ -1,14 +1,25 @@
 package com.suzhoushui.domain;
 
+import java.util.List;
+
 public class Specialty {
 
     private int id;
 
     private String name;
 
-    private String image;
 
     private String intro;
+
+    private List<String> imageList;
+
+    public List<String> getImageList() {
+        return imageList;
+    }
+
+    public void setImageList(List<String> imageList) {
+        this.imageList = imageList;
+    }
 
     public int getId() {
         return id;
@@ -24,14 +35,6 @@ public class Specialty {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
 
     public String getIntro() {

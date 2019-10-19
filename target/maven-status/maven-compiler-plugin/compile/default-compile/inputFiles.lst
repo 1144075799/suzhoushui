@@ -11,6 +11,7 @@ D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\contr
 D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\enums\StatusCode.java
 D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\mapper\LikeMapper.java
 D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\domain\Scenic.java
+D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\config\CorsConfig.java
 D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\controller\SpecialtyController.java
 D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\domain\Food.java
 D:\workspace\springboot\suzhoushui\suzhoushui\src\main\java\com\suzhoushui\service\impl\FoodService.java
