@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5761d1da-0f9c-4817-a853-463c80aa3070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/SpeciatyImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/TopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/FoodImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/SpecialtyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/SpecialtyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/Specialty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/domain/Specialty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/SpecialtyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/SpecialtyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/SpecialtyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/SpecialtyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/SpecialtyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/domain/Specialty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/domain/Specialty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/interceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/interceptor/TokenInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/SpecialtyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/SpecialtyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/SpecialtyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/SpecialtyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/Base64Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/Base64Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/MD5Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/UserTokenUtilImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/util/UserTokenUtilImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/ScenicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/controller/ScenicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/FoodMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/FoodMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/ScenicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/mapper/ScenicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/ScenicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/ScenicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/ScenicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suzhoushui/service/impl/ScenicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/FoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/FoodController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/ScenicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/controller/ScenicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/FoodMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/FoodMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/ScenicMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/mapper/ScenicMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/FoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/FoodService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/ScenicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/ScenicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/FoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/FoodService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/ScenicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suzhoushui/service/impl/ScenicService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -139,12 +143,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@99a1bd3e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9384e51b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@99a1bd3e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6693f36f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9384e51b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ee719c46" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -181,7 +185,9 @@
       <workItem from="1571204066491" duration="2595000" />
       <workItem from="1571275936374" duration="1132000" />
       <workItem from="1571450200190" duration="4292000" />
-      <workItem from="1571462641431" duration="1258000" />
+      <workItem from="1571462641431" duration="1537000" />
+      <workItem from="1571641060966" duration="2398000" />
+      <workItem from="1571815723699" duration="343000" />
     </task>
     <servers />
   </component>

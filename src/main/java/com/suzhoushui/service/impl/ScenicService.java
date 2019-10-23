@@ -34,6 +34,14 @@ public class ScenicService implements com.suzhoushui.service.ScenicService {
     }
 
     @Override
+    public List<Scenic> fingScenicTopTen() {
+
+        List<Scenic> scenicList=scenicMapper.findTopTen();
+
+        return scenicList;
+    }
+
+    @Override
     public Scenic getOneScenic(Long id) {
         Scenic scenic=scenicMapper.findById(id);
         return scenic;

@@ -40,6 +40,7 @@ public class ScenicController {
         return baseResponse;
     }
 
+
     @GetMapping("/pagingScenic")
     public Object pagingScenic(int page){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
@@ -47,6 +48,14 @@ public class ScenicController {
         baseResponse.setData(scenicList);
         return baseResponse;
 
+    }
+
+    @GetMapping("/findScenicTopTen")
+    public BaseResponse findTopTen(){
+        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+        List<Scenic> scenicList=scenicService.fingScenicTopTen();
+        baseResponse.setData(scenicList);
+        return baseResponse;
     }
 
     @GetMapping("/getComment")

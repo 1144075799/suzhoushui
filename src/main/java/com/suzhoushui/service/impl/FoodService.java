@@ -2,6 +2,7 @@ package com.suzhoushui.service.impl;
 
 import com.suzhoushui.domain.Food;
 import com.suzhoushui.domain.FoodAddress;
+import com.suzhoushui.domain.FoodImage;
 import com.suzhoushui.enums.StatusCode;
 import com.suzhoushui.mapper.FoodMapper;
 import com.suzhoushui.response.BaseResponse;
@@ -26,11 +27,31 @@ public class FoodService implements com.suzhoushui.service.FoodService {
     }
 
     @Override
-    public Food getOne(Long id) {
+    public FoodImage getOne(Long id) {
 
         Food food=foodMapper.findById(id);
 
-        return food;
+        int food_id=food.getId();
+        String title=food.getTitle();
+        String hot=food.getHot();
+        String detail=food.getDetail();
+
+
+        List<String> imageList=foodMapper.findFoodImageList(food_id);
+
+        FoodImage foodImage=new FoodImage();
+
+        foodImage.setId(food_id);
+        foodImage.setHot(hot);
+        foodImage.setDetail(detail);
+        foodImage.setImage(imageList);
+        foodImage.setTitle(title);
+
+
+
+
+
+        return foodImage;
     }
 
     @Override
@@ -46,5 +67,12 @@ public class FoodService implements com.suzhoushui.service.FoodService {
         FoodAddress foodAddress=foodMapper.findOneAddress(id);
 
         return foodAddress;
+    }
+
+    @Override
+    public List<Food> findTopTen() {
+        List<Food> foodList=foodMapper.findTopTen();
+
+        return foodList;
     }
 }

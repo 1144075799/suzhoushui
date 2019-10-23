@@ -3,6 +3,7 @@ package com.suzhoushui.controller;
 
 import com.suzhoushui.domain.Food;
 import com.suzhoushui.domain.FoodAddress;
+import com.suzhoushui.domain.FoodImage;
 import com.suzhoushui.enums.StatusCode;
 import com.suzhoushui.response.BaseResponse;
 import com.suzhoushui.service.impl.FoodService;
@@ -42,7 +43,7 @@ public class FoodController {
     @ApiOperation(value = "返回一个美食的接口",notes = "get请求参数中带上id")
     public BaseResponse getOne(Long id){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
-        Food food=foodService.getOne(id);
+        FoodImage food=foodService.getOne(id);
         Map map = new HashMap();
         map.put("food",food);
         baseResponse.setData(map);
@@ -66,6 +67,16 @@ public class FoodController {
         FoodAddress foodAddress=foodService.getOneAddress(id);
         Map map = new HashMap();
         map.put("foodAddress",foodAddress);
+        baseResponse.setData(map);
+        return baseResponse;
+    }
+
+    @GetMapping("findFoodTopTen")
+    public BaseResponse findTopTen(){
+        BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
+        List<Food> foodList=foodService.findTopTen();
+        Map map = new HashMap();
+        map.put("foodList",foodList);
         baseResponse.setData(map);
         return baseResponse;
     }

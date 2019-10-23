@@ -17,6 +17,13 @@ public interface ScenicService {
 
 
     /**
+     * 查找景区的top10
+     * @return
+     */
+    public List<Scenic> fingScenicTopTen();
+
+
+    /**
      * 根据id查询一个美景
      * @param id
      * @return

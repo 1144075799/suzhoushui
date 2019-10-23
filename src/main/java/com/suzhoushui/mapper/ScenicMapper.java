@@ -14,6 +14,9 @@ public interface ScenicMapper {
     @Select("SELECT * FROM scenic Where id = #{id}")
     Scenic findById(Long id);
 
+    @Select("SELECT * from scenic ORDER BY people DESC LIMIT 10")
+    List<Scenic> findTopTen();
+
     @Select("SELECT * FROM scenic LIMIT #{page},#{num}")
     List<Scenic> paging(int page,int num);
 

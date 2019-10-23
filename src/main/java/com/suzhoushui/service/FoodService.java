@@ -2,6 +2,7 @@ package com.suzhoushui.service;
 
 import com.suzhoushui.domain.Food;
 import com.suzhoushui.domain.FoodAddress;
+import com.suzhoushui.domain.FoodImage;
 import com.suzhoushui.response.BaseResponse;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public interface FoodService {
      * @param id
      * @return
      */
-    public Food getOne(Long id);
+    public FoodImage getOne(Long id);
 
     /**
      * 返回美食的地址集
@@ -35,4 +36,10 @@ public interface FoodService {
      */
     public FoodAddress getOneAddress(Long id);
 
+
+    /**
+     * 查找食物的top10
+     * @return
+     */
+    public List<Food> findTopTen();
 }
