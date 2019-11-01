@@ -1,6 +1,7 @@
 package com.suzhoushui.service.impl;
 
 import com.suzhoushui.domain.Food;
+import com.suzhoushui.domain.Like;
 import com.suzhoushui.domain.Scenic;
 import com.suzhoushui.domain.User;
 import com.suzhoushui.enums.StatusCode;
@@ -11,6 +12,8 @@ import com.suzhoushui.response.BaseResponse;
 import com.suzhoushui.util.UserTokenUtilImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service
@@ -72,5 +75,61 @@ public class LikeService implements com.suzhoushui.service.LikeService {
 
 
         return type;
+    }
+
+    @Override
+    public Integer deleteLikeFood(Long type_id, String token) {
+
+        //根据token获取用户信息
+        User user= userTokenUtil.getUser(token);
+
+        //获取用户的id
+        Integer user_id=user.getId();
+
+        Integer type=likeMapper.deleteLikeFood(type_id,user_id);
+
+        return type;
+    }
+
+    @Override
+    public Integer deleteLikeScenic(Long type_id, String token) {
+        //根据token获取用户信息
+        User user= userTokenUtil.getUser(token);
+
+        //获取用户的id
+        Integer user_id=user.getId();
+
+        Integer type=likeMapper.deleteLikeScenic(type_id,user_id);
+
+        return type;
+    }
+
+    @Override
+    public List<Like> getAllLikeFood(String token) {
+
+        //根据token获取用户信息
+        User user= userTokenUtil.getUser(token);
+
+        //获取用户的id
+        Integer user_id=user.getId();
+
+        List<Like> likes=likeMapper.getLikeFood(user_id);
+
+
+        return likes;
+    }
+
+    @Override
+    public List<Like> getAllLikeScenic(String token) {
+        //根据token获取用户信息
+        User user= userTokenUtil.getUser(token);
+
+        //获取用户的id
+        Integer user_id=user.getId();
+
+        List<Like> likes=likeMapper.getLikeScenic(user_id);
+
+
+        return likes;
     }
 }

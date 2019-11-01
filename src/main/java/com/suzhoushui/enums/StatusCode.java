@@ -3,14 +3,15 @@ package com.suzhoushui.enums;
 public enum StatusCode {
     Success(1, "数据获取成功"),
     LikeSuccess(203,"添加喜欢成功"),
+    DeleteSuccess(204,"删除喜欢成功"),
     LoginSuccess(301,"登陆成功"),
     RegisterSuccess(202,"注册成功"),
     CommentSuccess(204,"评论成功"),
 
-    DeleteSuccess(1, "删除成功"),
     Fail(0, "数据获取失败"),
     ParamFail(50, "参数错误"),
     LikeFail(60, "添加喜欢错误"),
+    DeleteLikeFail(80, "删除喜欢失败"),
     CommentFail(70, "评论失败"),
     VerifyFail(0, "验证失败"),
     ResignFail(0, "重签失败,可能是因为您太长久未登录"),
