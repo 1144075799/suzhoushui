@@ -3,6 +3,7 @@ package com.suzhoushui.service.impl;
 import com.suzhoushui.domain.User;
 import com.suzhoushui.enums.ExpTime;
 import com.suzhoushui.enums.StatusCode;
+import com.suzhoushui.mapper.ScenicMapper;
 import com.suzhoushui.mapper.UserMapper;
 import com.suzhoushui.response.BaseResponse;
 import com.suzhoushui.util.Base64Util;
@@ -24,6 +25,9 @@ public class UserService implements com.suzhoushui.service.UserService {
 
     @Autowired
     private UserTokenUtilImpl userTokenUtil;
+
+    @Autowired
+    private ScenicMapper scenicMapper;
 
 
     /**
@@ -108,6 +112,37 @@ public class UserService implements com.suzhoushui.service.UserService {
         map.put("user",user1);
         baseResponse.setData(map);
         return baseResponse;
+    }
+
+    @Override
+    public BaseResponse updateUserName(String newUsername, String token) {
+        User user = userTokenUtil.getUser(token);
+        String userName=user.getNickname();
+        Integer id=user.getId();
+        try {
+            scenicMapper.updateComment(userName,newUsername);
+            userMapper.updateUser(newUsername,id);
+            BaseResponse baseResponse = new BaseResponse(StatusCode.UserUpdateInfoSuccess);
+            return baseResponse;
+        }catch (Exception e){
+            BaseResponse baseResponse = new BaseResponse(StatusCode.UserUpdateInfoError);
+            return baseResponse;
+        }
+
+    }
+
+    @Override
+    public BaseResponse updateUserSignature(String signature, String token) {
+        User user = userTokenUtil.getUser(token);
+        Integer id=user.getId();
+        try {
+            userMapper.updateUserSig(signature,id);
+            BaseResponse baseResponse = new BaseResponse(StatusCode.UserUpdateInfoSuccess);
+            return baseResponse;
+        }catch (Exception e){
+            BaseResponse baseResponse = new BaseResponse(StatusCode.UserUpdateInfoError);
+            return baseResponse;
+        }
     }
 
 

@@ -12,4 +12,10 @@ public interface SpecialtyService {
      */
     public List<Specialty> getAll();
 
+    /**
+     * 根据id查找相关信息
+     * @return
+     */
+    public Specialty findById(int id);
+
 }

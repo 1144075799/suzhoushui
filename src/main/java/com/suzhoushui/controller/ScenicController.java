@@ -8,6 +8,7 @@ import com.suzhoushui.mapper.ScenicMapper;
 import com.suzhoushui.response.BaseResponse;
 import com.suzhoushui.service.impl.ScenicService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,6 +32,7 @@ public class ScenicController {
 
 
     @GetMapping("/findByIdScenic")
+    @ApiOperation(value = "根据id查找一个景区接口")
     public BaseResponse findById(Long id){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         Scenic scenic=scenicMapper.findById(id);
@@ -42,6 +44,7 @@ public class ScenicController {
 
 
     @GetMapping("/pagingScenic")
+    @ApiOperation(value = "分页查找景区接口")
     public Object pagingScenic(int page){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         List<Scenic> scenicList=scenicService.pagingScenic(page);
@@ -51,6 +54,7 @@ public class ScenicController {
     }
 
     @GetMapping("/findScenicTopTen")
+    @ApiOperation(value = "返回景区Top10接口")
     public BaseResponse findTopTen(){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         List<Scenic> scenicList=scenicService.fingScenicTopTen();
@@ -59,6 +63,7 @@ public class ScenicController {
     }
 
     @GetMapping("/getComment")
+    @ApiOperation(value = "返回所有评论接口")
     public Object getComment(Long scenic_id){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         List<Comment> commentList=scenicMapper.getComment(scenic_id);
@@ -67,6 +72,7 @@ public class ScenicController {
     }
 
     @PostMapping("/addComment")
+    @ApiOperation(value = "添加评论接口")
     public Object addComment(Long scenic_id,String comment,String token){
         Integer type=scenicService.addComment(scenic_id,comment,token);
 

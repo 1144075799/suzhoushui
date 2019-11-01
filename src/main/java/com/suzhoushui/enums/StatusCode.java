@@ -40,6 +40,8 @@ public enum StatusCode {
 
     SHOES_NOT_EXIST(40001,"鞋子不存在"),
     SHOES_STOCK_ERROR(40002,"鞋子库存错误"),
+    UserUpdateInfoError(40003,"用户修改信息失败"),
+
 
     ORDER_NOT_EXIST(50001,"订单不存在"),
     ORDER_STATUS_ERROR(50010,"订单状态不正确"),

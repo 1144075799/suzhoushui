@@ -72,6 +72,7 @@ public class FoodController {
     }
 
     @GetMapping("findFoodTopTen")
+    @ApiOperation(value = "返回一个美食Top10的接口")
     public BaseResponse findTopTen(){
         BaseResponse baseResponse = new BaseResponse(StatusCode.Success);
         List<Food> foodList=foodService.findTopTen();

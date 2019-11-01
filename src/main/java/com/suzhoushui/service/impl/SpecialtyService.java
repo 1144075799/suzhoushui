@@ -55,4 +55,17 @@ public class SpecialtyService implements com.suzhoushui.service.SpecialtyService
 
         return specialtyAllList;
     }
+
+    @Override
+    public Specialty findById(int id) {
+
+        Specialty specialty = specialtyMapper.getById(id);
+        List<String> imageList=specialtyMapper.getImageById(id);
+
+        specialty.setImageList(imageList);
+
+        return specialty;
+    }
+
+
 }

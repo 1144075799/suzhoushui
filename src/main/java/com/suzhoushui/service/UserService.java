@@ -31,6 +31,21 @@ public interface UserService {
     public BaseResponse findByName(String username,String token);
 
 
+    /**
+     * 更该用户昵称
+     * 要求不仅要修改用户表中的信息也要修改评论表中相对应的信息
+     * @param username
+     * @param token
+     * @return
+     */
+    public BaseResponse updateUserName(String username,String token);
 
+    /**
+     * 修改用户个性签名
+     * @param signature
+     * @param token
+     * @return
+     */
+    public BaseResponse updateUserSignature(String signature,String token);
 
 }

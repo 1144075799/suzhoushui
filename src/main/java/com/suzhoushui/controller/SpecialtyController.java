@@ -40,4 +40,16 @@ public class SpecialtyController {
         return baseResponse;
     }
 
+    @GetMapping("/findByIdSpecialty")
+    @ApiOperation(value = "根据id查找一个对象的信息")
+    public BaseResponse findById(int id){
+        BaseResponse baseResponse=new BaseResponse(StatusCode.Success);
+
+        Specialty specialty=specialtyService.findById(id);
+
+        baseResponse.setData(specialty);
+
+        return baseResponse;
+    }
+
 }

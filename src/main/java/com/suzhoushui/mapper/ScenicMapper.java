@@ -4,6 +4,7 @@ import com.suzhoushui.domain.Comment;
 import com.suzhoushui.domain.Scenic;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.Date;
 import java.util.List;
@@ -25,4 +26,7 @@ public interface ScenicMapper {
 
     @Insert("INSERT INTO comment (name,image,time,comment,scenic_id) values (#{name},#{image},#{time},#{comment},#{scenic_id})")
     Integer addComent(String name, String image, String time,String comment,Long scenic_id);
+
+    @Update("Update comment set name=#{newUserName} where name=#{userName}")
+    Integer updateComment(String userName,String newUserName);
 }
