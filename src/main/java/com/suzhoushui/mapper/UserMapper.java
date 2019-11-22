@@ -30,6 +30,8 @@ public interface UserMapper {
     @Update("Update user set signature=#{signature} where id=#{id}")
     Integer updateUserSig(String signature,int id);
 
+    @Update("Update user set image=#{imageUrl} where id=#{id}")
+    Integer uploadImage(String imageUrl,int id);
 
 
 }

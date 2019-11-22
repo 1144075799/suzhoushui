@@ -2,6 +2,9 @@ package com.suzhoushui.service;
 
 import com.suzhoushui.domain.User;
 import com.suzhoushui.response.BaseResponse;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 public interface UserService {
 
@@ -47,5 +50,13 @@ public interface UserService {
      * @return
      */
     public BaseResponse updateUserSignature(String signature,String token);
+
+    /**
+     * 上传头像
+     * @param file
+     * @param token
+     * @return
+     */
+    public BaseResponse uploadImage(MultipartFile file, String token) throws IOException;
 
 }
